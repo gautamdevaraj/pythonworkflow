@@ -1,4 +1,4 @@
-import: math
+import math
 
 def test sqrt():
     num = 25
