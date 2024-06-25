@@ -23,3 +23,11 @@ jobs:
       continue-on-error: true
     - name: checking
       run: echo testing after failure
+    - name: build docker image
+      uses: docker-practice/actions-setup-docker@master
+      timeout-minutes: 12
+      run: |
+        set -x
+
+        docker version
+        docker build -t pydoc .
