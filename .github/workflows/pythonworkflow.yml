@@ -27,7 +27,7 @@ jobs:
       uses: docker-practice/actions-setup-docker@master
       timeout-minutes: 12
       run: |
-        set -x
+          set -x
 
-        docker version
-        docker build -t pydoc .
+          docker version
+          docker build -t pydoc .
